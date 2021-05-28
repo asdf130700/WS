@@ -82,8 +82,20 @@ func main() {
 	// 	*a = *b
 	// 	*b = temp
 
-	a := 7      // 00000111
-	b := a << 2 // 00011100: a의 비트를 오른쪽으로 2번 이동
-	// fmt.Printf("%08b", b)//2진수 출력
-	fmt.Printf("%d", b)
+	// a := 7      // 00000111
+	// b := a << 2 // 00011100: a의 비트를 오른쪽으로 2번 이동
+	// // fmt.Printf("%08b", b)//2진수 출력
+	// fmt.Printf("%d", b)
+
+	var c float64 = 0.1
+	var d float64 = 0.2
+	fmt.Println(1 == 1)             // true: 두 정수가 같으므로 true
+	fmt.Println(3.5 == 3.5)         // true: 두 실수가 같으므로 true
+	fmt.Println("Hello" == "Hello") // true: 두 문자열이 같으므로 true
+	fmt.Println(c+d == 0.3)         //c + d가 의도와 다르게 저장됨
+	fmt.Println(c + d)
+
+	a := [3]int{1, 2, 3}
+	b := [3]int{1, 2, 3}
+	fmt.Println(a == b) // true: 두 배열이 같으므로 true
 }
