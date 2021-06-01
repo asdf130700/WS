@@ -110,4 +110,8 @@ func main() {
 
 	fmt.Printf("%s", test)
 
+	var v int = 10
+	fmt.Scanf("%d", v)
+	fmt.Println("%v", &v)
+	fmt.Println(v)
 }
